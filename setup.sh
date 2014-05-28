@@ -39,6 +39,7 @@ exists(){
 php_install(){
   install php5
   install php5-mysql
+  install php5-gd
   echo extension=pdo.so >> /etc/php5/apache2/php.ini
   echo extension=pdo_mysql.so >> /etc/php5/apache2/php.ini
   service apache2 restart
